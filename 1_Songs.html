@@ -1,0 +1,112 @@
+<!DOCTYPE html> <!--HTML must have-->
+<html lang="en"> <!--contains all html in english-->
+  <head> <!--important metadata that isnt rendered-->
+    <meta charset="utf-8"> <!--specifies metadata (charset, in this instance)-->
+    <title>A's Website</title>
+  </head>
+  <body> <!--contains most elements besides head-->
+    <main> <!--has code unique to this section (not repeated)-->
+      <h1>A. Szeto's Website</h1> <!--h1 to h6 in most to least importance-->
+      <h2>Welcome!</h2>
+      <p>This is my personal HTML page!</p> <!--paragraph used for text-->
+      <!--section separates sections of your code like with headers and footers-->
+      <section>
+        <!--a tag links to another page (must use href attribute)-->
+        <!--target attribute specifies where to open link (_blank means new tab)-->
+        <a href="https://www.youtube.com/watch?v=8Go6dHuylyM" target="_blank">
+          <!--void elements have no closing tag-->
+          <!--src attribute specifies image url-->
+          <!--all images should have alt in case of fail-->
+          <img src="https://i.pinimg.com/originals/ca/6c/74/ca6c744333366d89b3824449cb844c2e.gif" alt="Happy Cat">
+        </a>
+        <p>Literally Me^</p>
+      </section>
+      <section>
+        <h2>Favorite Songs</h2>
+        <h3>Current Favorite:</h3>
+        <p>My favorite song is <a href="https://www.youtube.com/watch?v=y9Wxl9Q9lUQ" target="_blank">Red Wine Supernova</a> right now!</p>
+        <h3>Top 5 Chappell Roan Songs (Ordered):</h3>
+        <!--ol is ordered/numbered ul is unordered/bulleted-->
+        <ol>
+          <!--li is list item-->
+          <li>Red Wine Supernova</li>
+          <li>Good Luck, Babe!</li>
+          <li>Coffee</li>
+          <li>My Kink is Karma</li>
+          <li>Casual</li>
+        </ol>
+        <!--figure element contains content with caption which is independent of document flow-->
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/34/Chappell_Roan_-_The_Rise_and_Fall_of_a_Midwest_Princess.png/220px-Chappell_Roan_-_The_Rise_and_Fall_of_a_Midwest_Princess.png"
+          alt="Rise and Fall of a Midwest Princess" width="100" height="100">
+          <!--em element italicizes-->
+          <figcaption><em>Rise and Fall of a Midwest Princess</em></figcaption>
+        </figure>
+        <h3>Favorite Laufey Songs (Unordered):</h3>
+        <ul>
+          <li>Must Be Love</li>
+          <li>Bored</li>
+          <li>Let You Break My Heart Again</li>
+          <li>Bewitched</li>
+          <li>Serendipity</li>
+        </ul>
+        <figure>
+          <img src="https://i.scdn.co/image/ab67616d0000b2739457bba66a2daf4456855bb7" 
+          alt="Let You Break My Heart Again" height="250" width="250">
+          <!--strong is bold-->
+          <figcaption><em>Heartbreak hits <strong>hard</strong> :(</em></figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Send me your favorite songs!</h2>
+        <!--form used to collect data-->
+        <!--action attribute specifies where data goes-->
+        <form action="/data.html">
+          <!--input takes an input; type attribute specifies what type (text default)-->
+          <!--name attribute assigns value to data like a var-->
+          <!--placeholder attribute adds temp text in input field-->
+          <!--required makes user unable to submit without adding something-->
+          <!--size attribute gives size in characters of input box-->
+          <!--br element breaks line-->
+          <h3>Favorite Song</h3>
+          <input type="text" name="User_Song" placeholder="Ex. Dream Girl by Baby Queen" size="22" required><br>
+          <h3>Favorite Genre</h3>
+          <!--fieldset makes an area of different related inputs-->
+          <fieldset >
+            <!--legend is caption-->
+            <legend>Pick your favorite genre!</legend>
+            <!--label makes entire input clickable-->
+            <!--id gives unique value to elements-->
+            <!--name makes it so only one can be selected-->
+            <!--value is what is passed on when submitted-->
+            <label><input type="radio" id="pop" name="song" value="pop" required> Pop</label><br>
+            <label><input type="radio" id="rock" name="song" value="rock"> Rock</label><br>
+            <label><input type="radio" id="country" name="song" value="country"> Country</label><br>
+          </fieldset>
+          <fieldset>
+            <legend>Pick your favorite eras!</legend>
+            <!--checkbox makes multiple selectable-->
+            <!--for uses id to link text to element-->
+            <input type="checkbox" id="80s" name="era" value="80s"> <label for="80s">'80s</label>
+            <input type="checkbox" id="90s" name="era" value="90s"> <label for="90s">'90s</label>
+            <input type="checkbox" id="00s" name="era" value="00s"> <label for="00s">2000s</label>
+            <input type="checkbox" id="10s" name="era" value="10s"> <label for="10s">2010s</label>
+            <input type="checkbox" id="20s" name="era" value="20s"> <label for="20s">2020s</label>
+          </fieldset>
+          <!--default action of button is to submit form-->
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main><br>
+    <!--footer is at end of page-->
+    <footer>
+        <!--address is for footer info-->
+        <address>
+          Made by A. Szeto<br>
+          Github: <a href="https://github.com/szetoai">https://github.com/szetoai</a><br>
+          Instagram: <a href="https://www.instagram.com/aszeto99910/">@aszeto99910</a><br>
+          Discord: @Fredcat._.<br>
+        </address>
+    </footer>
+  </body>
+</html>
